@@ -15,12 +15,15 @@ function App() {
   return (
     <div>
       <Router>
-          <Header />
+        <Header />
         <Switch>
+          <Route path="/home">
+            <Vehicle />
+          </Route>
           <Route exact path="/">
             <Vehicle />
           </Route>
-          <Route path="/destinations/:id">
+          <Route path="/destinations">
             <Destination />
           </Route>
           <Route path="/login">

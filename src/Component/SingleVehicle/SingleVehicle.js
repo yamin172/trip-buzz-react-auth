@@ -1,16 +1,15 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SingleVehicle = (props) => {
-    const { title, imageUrl } = props.vehicle;
-    const {id} = useParams()
+    const { title, imageUrl, vehicle_id } = props.vehicle;
     return (
       <>
-        <Link to={`/destinations/${id}`}>
+        <Link to={`/destinations/${vehicle_id}`} className="text-decoration-none">
           <Card
-            className="m-2 d-flex align-content-between"
-            style={{ width: "16rem" }}
+            className="m-2 d-flex align-content-between shadow border-0"
+            style={{ width: "16rem"}}
           >
             <Card.Img className="card-img" variant="top" src={imageUrl} />
             <Card.Body>

@@ -9,7 +9,7 @@ const Vehicle = () => {
     }, [])
     
     return (
-        <div className="container mt-3 d-flex">
+        <div className="container mt-5 d-flex">
             {
                 vehicles.map(vehicle => <SingleVehicle key={vehicle.id} vehicle={vehicle}/>)
             }
