@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const Destination = () => {
     return (
       <Container className="mt-5">
-        <h2> ami bike dia saradin gurbo</h2>
+        <h2> destinations</h2>
       </Container>
     );
 };
