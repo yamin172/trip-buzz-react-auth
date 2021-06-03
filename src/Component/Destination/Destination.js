@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Vehicles from "../../VehicleData/VehicleData.json";
 import { Container } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
 import PriceShow from '../PriceShow/PriceShow';
 
-const Destination = (props) => {
-  const {vehicle_id} = useParams();
+const Destination = () => {
   const [dataShow, setDataShow] = useState([]);
   useEffect(() => {
     setDataShow(Vehicles)
