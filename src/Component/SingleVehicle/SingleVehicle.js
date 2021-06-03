@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const SingleVehicle = (props) => {
-    const { title, imageUrl, vehicle_id } = props.vehicle;
+    const { title, imageUrl, vehicle_id, id } = props.vehicle;
     return (
       <>
         <Link to={`/destinations/${vehicle_id}`} className="text-decoration-none">
@@ -14,7 +14,8 @@ const SingleVehicle = (props) => {
             <Card.Img className="card-img" variant="top" src={imageUrl} />
             <Card.Body>
               <Card.Text className="text-center font-weight-bold">
-                {title}
+                {title} <br/>
+                {id}
               </Card.Text>
             </Card.Body>
           </Card>

@@ -2,20 +2,24 @@
     "id": 1,
     "title": "BIKE",
     "vehicle_id": "bike",
+    "price":"500",
     "imageUrl": "https://image.freepik.com/free-vector/flat-red-sport-bike-concept_1284-36218.jpg"
 }, {
     "id": 2,
     "title": "CAR",
     "vehicle_id": "car",
+    "price":"400",
     "imageUrl": "https://image.freepik.com/free-vector/modern-blue-urban-adventure-suv-vehicle-illustration_1344-205.jpg"
 }, {
     "id": 3,
     "title": "BUS",
     "vehicle_id": "bus",
+    "price":"100",
     "imageUrl": "https://image.freepik.com/free-vector/isometric-vehicle_24877-50906.jpg"
 }, {
     "id": 4,
     "title": "TRAIN",
     "vehicle_id": "train",
+    "price":"50",
     "imageUrl": "https://image.freepik.com/free-vector/trains-composition-isometric-railway-passenger-train-light-rail-images-with-railroad-station-terminal-building-vector-illustration_98292-50.jpg?1"
 }]
