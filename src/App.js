@@ -28,7 +28,7 @@ function App() {
             </Route>
             <Route exact path="/">
               <Vehicle />
-            </Route>
+          </Route>
             <PrivateRoute path="/destinations/:vehicle_id">
               <Destination />
             </PrivateRoute>
