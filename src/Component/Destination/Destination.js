@@ -1,18 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import Vehicles from "../../VehicleData/VehicleData.json";
-import { Container } from 'react-bootstrap';
-import PriceShow from '../PriceShow/PriceShow';
+import React from 'react';
+import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 
 const Destination = () => {
-  const [dataShow, setDataShow] = useState([]);
-  useEffect(() => {
-    setDataShow(Vehicles)
-  }, []);
+  
     return (
       <Container className="mt-5">
-        {
-          dataShow.map(data => <PriceShow data={data}></PriceShow>)
-        }
+        <Row>
+          <Col md="4">
+            <Card className="m-5 shadow border-0" style={{ width: "15rem" }}>
+              <Card.Body>
+                <h5>Pick From</h5>
+                <input type="text" name="text" className="form-control mb-2" />
+                <h5>Pick To</h5>
+                <input type="text" name="text" className="form-control mb-2" />
+                <input
+                  type="button"
+                  value="Search"
+                  className="btn btn-danger btn-block"
+                />
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md="8">
+            <Image
+              className="shadow rounded img-fluid"
+              src={`https://image.freepik.com/free-vector/road-map-with-pointers-flat-style_23-2147789377.jpg`}
+              alt="google maps"
+            />
+          </Col>
+        </Row>
       </Container>
     );
 };
