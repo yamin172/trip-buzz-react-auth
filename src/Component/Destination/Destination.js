@@ -9,15 +9,13 @@ const Destination = () => {
           <Col md="4">
             <Card className="m-5 shadow border-0" style={{ width: "15rem" }}>
               <Card.Body>
-                <h5>Pick From</h5>
-                <input type="text" name="text" className="form-control mb-2" />
-                <h5>Pick To</h5>
-                <input type="text" name="text" className="form-control mb-2" />
-                <input
-                  type="button"
-                  value="Search"
-                  className="btn btn-danger btn-block"
-                />
+                <from action="">
+                  <h5>Pick From</h5>
+                  <input type="text" name="text" className="form-control mb-2" required/>
+                  <h5>Pick To</h5>
+                  <input type="text" name="text" className="form-control mb-2" required/>
+                  <input type="button" value="Search" className="btn btn-danger btn-block"/>
+                </from>
               </Card.Body>
             </Card>
           </Col>
